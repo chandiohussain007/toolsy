@@ -382,7 +382,7 @@ export default function App() {
   const hasOutOfBounds = checkOutOfBounds();
 
   return (
-    <div className="relative\ min-h-screen\ w-full\ ts-page-bg\ flex flex-col justify-between p-6 sm:p-12 selection:bg-blue-500/20 selection:text-blue-900">
+    <div className="relative min-h-screen w-full ts-page-bg\ flex flex-col justify-between p-6 sm:p-12 selection:bg-blue-500/20 selection:text-blue-900">
       
       {/* Decorative Blur Spheres */}
       <div className="absolute top-[8%] left-[12%] w-[24rem] h-[24rem] sm:w-[32rem] sm:h-[32rem] bg-gradient-to-tr from-blue-300/20 to-indigo-300/25 rounded-full blur-[90px] pointer-events-none" />
@@ -905,5 +905,6 @@ export default function App() {
     </div>
   );
 }
+
 
 

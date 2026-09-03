@@ -383,7 +383,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen\ w-full\ ts-page-bg flex items-center justify-center font-sans overflow-y-auto p-4 md:p-8">
+    <div className="min-h-screen w-full ts-page-bg flex items-center justify-center font-sans overflow-y-auto p-4 md:p-8">
       
       {/* Sleek Theme Canvas Container */}
       <div className="max-w-xl w-full bg-white/40 backdrop-blur-md border border-white/20 shadow-2xl rounded-3xl p-6 md:p-10 relative">
@@ -656,4 +656,5 @@ export default function App() {
     </div>
   );
 }
+
 

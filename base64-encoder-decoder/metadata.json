@@ -1,6 +1,0 @@
-{
-  "name": "Base64 Encoder Decoder",
-  "description": "An elegant, Apple-inspired utility to encode and decode text & files into Base64 format.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}

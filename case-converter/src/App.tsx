@@ -226,7 +226,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen\ w-full\ ts-page-bg flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 relative overflow-hidden font-sans select-none">
+    <div className="min-h-screen w-full ts-page-bg flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 relative overflow-hidden font-sans select-none">
       
       {/* ðŸ”® Background Abstract Glass Spheres (Apple mesh aesthetic) */}
       <motion.div 
@@ -622,4 +622,5 @@ export default function App() {
     </div>
   );
 }
+
 

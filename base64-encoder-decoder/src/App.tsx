@@ -233,7 +233,7 @@ export default function App() {
     : 0;
 
   return (
-    <div className="min-h-screen\ ts-page-bg font-sans flex flex-col items-center justify-center p-4 relative overflow-hidden">
+    <div className="min-h-screen ts-page-bg font-sans flex flex-col items-center justify-center p-4 relative overflow-hidden">
       
       {/* Dynamic macOS-style blurred decorative nodes */}
       <div 
@@ -680,4 +680,5 @@ export default function App() {
     </div>
   );
 }
+
 

@@ -1,6 +1,0 @@
-{
-  "name": "Unit Converter",
-  "description": "A premium, lightning-fast glassmorphic Unit Converter featuring seamless dual-column dynamic calculations and smooth Framer Motion animations.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}

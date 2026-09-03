@@ -559,7 +559,7 @@ export default function App() {
   };
 
   return (
-    <div className="absolute\ top-0\ left-0\ w-full\ min-h-screen\ ts-page-bg text-slate-800 py-12 px-4 sm:px-6 relative overflow-hidden flex flex-col justify-between font-sans selection:bg-indigo-200">
+    <div className="absolute\ top-0\ left-0 w-full min-h-screen ts-page-bg text-slate-800 py-12 px-4 sm:px-6 relative overflow-hidden flex flex-col justify-between font-sans selection:bg-indigo-200">
       
       {/* Decorative Pastel Background Blobs */}
       <div 
@@ -1340,4 +1340,5 @@ export default function App() {
     </div>
   );
 }
+
 

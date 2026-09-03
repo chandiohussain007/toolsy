@@ -94,7 +94,7 @@ export default function App() {
 
   return (
     <div 
-      className="relative\ min-h-screen\ ts-page-bg overflow-x-hidden flex items-center justify-center p-4 sm:p-6 md:p-12 font-sans selection:bg-indigo-500/10 selection:text-indigo-900"
+      className="relative min-h-screen ts-page-bg overflow-x-hidden flex items-center justify-center p-4 sm:p-6 md:p-12 font-sans selection:bg-indigo-500/10 selection:text-indigo-900"
       style={{
         backgroundImage: 'radial-gradient(circle at 0% 0%, #E0E7FF 0%, transparent 50%), radial-gradient(circle at 100% 100%, #FDF2F8 0%, transparent 50%)'
       }}
@@ -252,4 +252,5 @@ export default function App() {
     </div>
   );
 }
+
 

@@ -1,20 +1,40 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+﻿# 🔤 Case Converter
 
-# Run and deploy your AI Studio app
+> Part of the **[ToolSy](https://github.com/chandiohussain007/toolsy)** — a collection of premium, free, client-side web utilities.
 
-This contains everything you need to run your app locally.
+Instantly transform text between UPPERCASE, lowercase, Title Case, camelCase, PascalCase, snake_case, kebab-case, and more. Supports undo/redo history and clipboard operations.
 
-View your app in AI Studio: https://ai.studio/apps/b837de3e-f13e-40b9-ad58-4089cc783d19
+## ✨ Features
 
-## Run Locally
+- 10+ case presets
+- Undo/redo history
+- One-click clipboard copy
+- Real-time transformation
+- Lightweight & instant
 
-**Prerequisites:**  Node.js
+## 🛠 Tech Stack
 
+![](https://img.shields.io/badge/-React-0f172a?style=flat-square) ![](https://img.shields.io/badge/-TypeScript-0f172a?style=flat-square) ![](https://img.shields.io/badge/-Vite-0f172a?style=flat-square) ![](https://img.shields.io/badge/-TailwindCSS-0f172a?style=flat-square)
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 🚀 Run Locally
+
+```bash
+npm install
+npm run dev
+```
+
+## 🏗 Build for Production
+
+```bash
+npm run build
+```
+
+## 📦 Deploy to Vercel
+
+Click the button or import this folder into [Vercel](https://vercel.com) — it auto-detects Vite and deploys instantly.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
+
+## 📄 License
+
+MIT © [ToolSy](https://github.com/chandiohussain007/toolsy)

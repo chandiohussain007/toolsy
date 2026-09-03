@@ -694,7 +694,7 @@ export default function App() {
   };
 
   return (
-    <div className="relative\ min-h-screen\ w-full\ ts-page-bg font-sans flex flex-col items-center justify-center p-4 md:p-8 select-none antialiased overflow-x-hidden">
+    <div className="relative min-h-screen w-full ts-page-bg font-sans flex flex-col items-center justify-center p-4 md:p-8 select-none antialiased overflow-x-hidden">
       
       {/* Soft aesthetic background accent circles */}
       <div className="absolute top-10 left-10 md:left-24 w-80 h-80 rounded-full bg-indigo-200 blur-3xl opacity-40 mix-blend-multiply filter pointer-events-none" />
@@ -1195,4 +1195,5 @@ export default function App() {
     </div>
   );
 }
+
 

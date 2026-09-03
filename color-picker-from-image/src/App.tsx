@@ -537,7 +537,7 @@ export default function App() {
     : null;
 
   return (
-    <div className="min-h-screen\ w-full\ ts-page-bg text-slate-800 flex flex-col items-center justify-center p-4 md:p-8 relative overflow-hidden font-sans">
+    <div className="min-h-screen w-full ts-page-bg text-slate-800 flex flex-col items-center justify-center p-4 md:p-8 relative overflow-hidden font-sans">
       
       {/* Immersive blurred background graphics simulating organic glowing backlights */}
       <div className="absolute top-[-20%] left-[-20%] w-[60%] h-[60%] rounded-full bg-pink-300/20 blur-[130px] pointer-events-none" />
@@ -968,4 +968,5 @@ export default function App() {
     </div>
   );
 }
+
 

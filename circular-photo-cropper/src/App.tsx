@@ -254,7 +254,7 @@ export default function App() {
 
   return (
     <div 
-      className="min-h-screen\ ts-page-bg relative flex flex-col items-center justify-center p-4 py-12 select-none overflow-y-auto antialiased"
+      className="min-h-screen ts-page-bg relative flex flex-col items-center justify-center p-4 py-12 select-none overflow-y-auto antialiased"
       style={{
         backgroundImage: 'radial-gradient(circle at 0% 0%, #ffffff 0%, transparent 50%), radial-gradient(circle at 100% 100%, #d1d5db 0%, transparent 50%)'
       }}
@@ -731,4 +731,5 @@ export default function App() {
     </div>
   );
 }
+
 

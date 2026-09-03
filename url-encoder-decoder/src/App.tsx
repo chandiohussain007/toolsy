@@ -281,7 +281,7 @@ export default function App() {
 
   return (
     <div
-      className="relative\ min-h-screen\ w-full\ ts-page-bg\ flex flex-col items-center justify-center p-4 md:p-8 font-sans selection:bg-slate-200/80 selection:text-slate-900 overflow-y-auto"
+      className="relative min-h-screen w-full ts-page-bg\ flex flex-col items-center justify-center p-4 md:p-8 font-sans selection:bg-slate-200/80 selection:text-slate-900 overflow-y-auto"
       style={{
         background: "radial-gradient(circle at 0% 0%, #e2e8f0 0%, transparent 50%), radial-gradient(circle at 100% 100%, #f1f5f9 0%, transparent 50%), radial-gradient(circle at 50% 50%, #ffffff 0%, #f8fafc 100%)",
       }}
@@ -640,4 +640,5 @@ export default function App() {
     </div>
   );
 }
+
 

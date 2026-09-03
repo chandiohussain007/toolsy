@@ -1,6 +1,0 @@
-{
-  "name": "Word & Character Counter",
-  "description": "An elegant, interactive real-time Word and Character Counter tool featuring an Apple-inspired glassmorphic design, reading/speaking estimates, readability grade scoring, character goals, and density analysis.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}

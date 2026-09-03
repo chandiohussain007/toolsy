@@ -1,6 +1,0 @@
-{
-  "name": "JSON Formatter & Validator",
-  "description": "A premium aesthetic JSON formatter, validator, and interactive tree visualizer with real-time error tracking.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}

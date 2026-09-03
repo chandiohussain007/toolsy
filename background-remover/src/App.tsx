@@ -1033,7 +1033,7 @@ export default function App() {
   };
 
   return (
-    <div id="app-root" className="min-h-screen\ ts-page-bg flex flex-col justify-between py-10 px-4 sm:px-6 font-sans text-slate-800 selection:bg-brand-100 selection:text-brand-700 antialiased relative overflow-x-hidden">
+    <div id="app-root" className="min-h-screen ts-page-bg flex flex-col justify-between py-10 px-4 sm:px-6 font-sans text-slate-800 selection:bg-brand-100 selection:text-brand-700 antialiased relative overflow-x-hidden">
       
       {/* Decorative Orbs */}
       <div className="absolute top-0 -left-4 w-96 h-96 bg-blue-100 rounded-full blur-3xl opacity-40 pointer-events-none -z-10 animate-pulse duration-10000" />
@@ -1791,4 +1791,5 @@ export default function App() {
     </div>
   );
 }
+
 

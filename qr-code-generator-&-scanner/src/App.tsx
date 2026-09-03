@@ -655,7 +655,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen\ ts-page-bg\ dark font-sans text-neutral-100 flex flex-col justify-between items-center p-4 selection:bg-indigo-500 selection:text-white" id="main-container">
+    <div className="min-h-screen ts-page-bg dark font-sans text-neutral-100 flex flex-col justify-between items-center p-4 selection:bg-indigo-500 selection:text-white" id="main-container">
       
       {/* Decorative ambient background mesh blobs */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none z-0">
@@ -1598,4 +1598,5 @@ export default function App() {
     </div>
   );
 }
+
 

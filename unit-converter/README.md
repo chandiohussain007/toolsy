@@ -1,20 +1,40 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+﻿# 📏 Unit Converter
 
-# Run and deploy your AI Studio app
+> Part of the **[ToolSy](https://github.com/chandiohussain007/toolsy)** — a collection of premium, free, client-side web utilities.
 
-This contains everything you need to run your app locally.
+A fast, dual-column unit converter covering length, weight, temperature, area, volume, speed, and more. Change one value and see all others update instantly.
 
-View your app in AI Studio: https://ai.studio/apps/df5c5606-03a6-4926-82c1-2ac62a29895d
+## ✨ Features
 
-## Run Locally
+- 10+ unit categories
+- Dual-column live sync
+- Smooth animations
+- Keyboard friendly
+- Zero dependencies beyond React
 
-**Prerequisites:**  Node.js
+## 🛠 Tech Stack
 
+![](https://img.shields.io/badge/-React-0f172a?style=flat-square) ![](https://img.shields.io/badge/-TypeScript-0f172a?style=flat-square) ![](https://img.shields.io/badge/-Vite-0f172a?style=flat-square) ![](https://img.shields.io/badge/-Framer%20Motion-0f172a?style=flat-square)
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 🚀 Run Locally
+
+```bash
+npm install
+npm run dev
+```
+
+## 🏗 Build for Production
+
+```bash
+npm run build
+```
+
+## 📦 Deploy to Vercel
+
+Click the button or import this folder into [Vercel](https://vercel.com) — it auto-detects Vite and deploys instantly.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
+
+## 📄 License
+
+MIT © [ToolSy](https://github.com/chandiohussain007/toolsy)

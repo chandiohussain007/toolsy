@@ -1,6 +1,0 @@
-{
-  "name": "Background Remover",
-  "description": "A premium, client-side utility tool to remove backgrounds from images with professional auto-chroma, tolerance controls, manual brushes, and a split compare view.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}

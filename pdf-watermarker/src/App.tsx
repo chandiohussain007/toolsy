@@ -293,7 +293,7 @@ export default function App() {
   const activeColorValue = isCustomColorActive ? customColor : selectedColor;
 
   return (
-    <div className="min-h-screen\ ts-page-bg flex flex-col justify-between items-center p-4 sm:p-6 md:p-8 font-sans overflow-x-hidden relative">
+    <div className="min-h-screen ts-page-bg flex flex-col justify-between items-center p-4 sm:p-6 md:p-8 font-sans overflow-x-hidden relative">
       
       {/* Backdrops - luxury floating blobs */}
       <div className="absolute top-1/4 left-1/4 -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-indigo-300/20 rounded-full blur-3xl pointer-events-none" />
@@ -876,4 +876,5 @@ export default function App() {
     </div>
   );
 }
+
 

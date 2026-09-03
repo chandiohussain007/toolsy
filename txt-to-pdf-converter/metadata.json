@@ -1,6 +1,0 @@
-{
-  "name": "TXT to PDF Converter",
-  "description": "A premium, minimalist text-to-pdf editor with live typesetting preview and high-fidelity PDF printing.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}

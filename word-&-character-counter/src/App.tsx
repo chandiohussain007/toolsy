@@ -399,7 +399,7 @@ export default function App() {
   }, [goalEnabled, goalType, goalValue, wordCount, charWithSpaces]);
 
   return (
-    <div className="relative\ min-h-screen\ ts-page-bg flex flex-col justify-start items-center px-4 py-8 md:py-12 select-none">
+    <div className="relative min-h-screen ts-page-bg flex flex-col justify-start items-center px-4 py-8 md:py-12 select-none">
       {/* Premium blur background wallpaper */}
       <BackgroundBlobs />
 
@@ -1122,4 +1122,5 @@ export default function App() {
     </div>
   );
 }
+
 

@@ -1,6 +1,0 @@
-{
-  "name": "Color Picker from Image",
-  "description": "An elegant, Apple-inspired utility to upload images, zoom in with a magnifying loupe, and click to extract exact pixel colors as HEX and RGB codes.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}

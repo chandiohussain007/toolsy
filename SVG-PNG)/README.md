@@ -1,20 +1,40 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+﻿# 🔷 SVG to PNG Converter
 
-# Run and deploy your AI Studio app
+> Part of the **[ToolSy](https://github.com/chandiohussain007/toolsy)** — a collection of premium, free, client-side web utilities.
 
-This contains everything you need to run your app locally.
+Convert SVG vector graphics into high-resolution PNG raster images directly in the browser. Choose your export scale (1x to 4x) for retina-ready output.
 
-View your app in AI Studio: https://ai.studio/apps/e5e5a602-da25-4090-99d7-a5fd831f2d5b
+## ✨ Features
 
-## Run Locally
+- 1x – 4x export scale
+- Real-time SVG preview
+- Upload .svg file or paste raw code
+- Lossless PNG output
+- Client-side canvas rasterisation
 
-**Prerequisites:**  Node.js
+## 🛠 Tech Stack
 
+![](https://img.shields.io/badge/-React-0f172a?style=flat-square) ![](https://img.shields.io/badge/-TypeScript-0f172a?style=flat-square) ![](https://img.shields.io/badge/-Vite-0f172a?style=flat-square) ![](https://img.shields.io/badge/-Canvas%20API-0f172a?style=flat-square)
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 🚀 Run Locally
+
+```bash
+npm install
+npm run dev
+```
+
+## 🏗 Build for Production
+
+```bash
+npm run build
+```
+
+## 📦 Deploy to Vercel
+
+Click the button or import this folder into [Vercel](https://vercel.com) — it auto-detects Vite and deploys instantly.
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
+
+## 📄 License
+
+MIT © [ToolSy](https://github.com/chandiohussain007/toolsy)

@@ -1,6 +1,0 @@
-{
-  "name": "Case Converter",
-  "description": "A premium, minimalist client-side text case converter featuring text transformation presets and instant clipboard operations with elegant, fluid responsive design.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}

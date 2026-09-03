@@ -536,7 +536,7 @@ export default function App() {
   };
 
   return (
-    <div id="converter-root" className="min-h-screen\ ts-page-bg\ relative flex flex-col items-center justify-between font-sans text-stone-800 bg-[#fbfbfa] selection:bg-indigo-500/15 selection:text-indigo-950 overflow-x-hidden md:py-8 py-2">
+    <div id="converter-root" className="min-h-screen ts-page-bg relative flex flex-col items-center justify-between font-sans text-stone-800 bg-[#fbfbfa] selection:bg-indigo-500/15 selection:text-indigo-950 overflow-x-hidden md:py-8 py-2">
       
       {/* Absolute Ambient Fluid Liquid Color Accents (No print) */}
       <div className="absolute inset-0 -z-30 overflow-hidden pointer-events-none no-print bg-[#fafaf8]">
@@ -1303,4 +1303,5 @@ export default function App() {
     </div>
   );
 }
+
 

@@ -1,6 +1,0 @@
-{
-  "name": "PDF Watermarker",
-  "description": "A elegant client-side PDF watermarking tool featuring customizable text, opacity, and rotation controls with safe in-browser processing.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}

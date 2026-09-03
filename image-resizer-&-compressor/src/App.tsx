@@ -257,7 +257,7 @@ export default function App() {
   const reductionStats = renderSizeReduction();
 
   return (
-    <div className="min-h-screen\ w-full\ ts-page-bg relative flex flex-col items-center justify-center p-4 md:p-8 font-sans overflow-x-hidden select-none">
+    <div className="min-h-screen w-full ts-page-bg relative flex flex-col items-center justify-center p-4 md:p-8 font-sans overflow-x-hidden select-none">
       {/* Premium ambient light backgrounds to enrich backdrop-blur visual depth */}
       <div className="absolute top-1/4 -left-32 w-80 h-80 rounded-full bg-indigo-200/50 filter blur-[100px] pointer-events-none" />
       <div className="absolute bottom-1/4 -right-32 w-80 h-80 rounded-full bg-pink-100/40 filter blur-[120px] pointer-events-none" />
@@ -624,4 +624,5 @@ export default function App() {
     </div>
   );
 }
+
 

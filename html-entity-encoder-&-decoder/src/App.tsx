@@ -183,7 +183,7 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen\ ts-page-bg text-slate-700 font-sans flex items-center justify-center p-4 sm:p-12 relative overflow-x-hidden selection:bg-indigo-100 selection:text-indigo-800">
+    <div className="min-h-screen ts-page-bg text-slate-700 font-sans flex items-center justify-center p-4 sm:p-12 relative overflow-x-hidden selection:bg-indigo-100 selection:text-indigo-800">
       
       {/* Central Clean Minimalist Glass Card */}
       <div className="relative z-10 w-full max-w-xl glass rounded-[2.5rem] p-6 sm:p-10 flex flex-col gap-8 transition-all duration-300">
@@ -648,4 +648,5 @@ export default function App() {
     </div>
   );
 }
+
 

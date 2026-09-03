@@ -1,6 +1,0 @@
-{
-  "name": "Gemini Creative Studio",
-  "description": "A high-fidelity full-stack creative playground showcasing multi-modal Gemini capabilities, including visual contextual chats, high-resolution generative image art, and dynamic raw text-to-speech synthesis.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}

@@ -1,4 +1,4 @@
-﻿import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
   Upload, Download, FileCode, CheckCircle, AlertCircle, 
@@ -216,12 +216,12 @@ export default function App() {
   }, [svgInput]);
 
   return (
-    <div className="min-h-screen\ ts-page-bg flex items-center justify-center p-4 md:p-8 font-sans selection:bg-blue-500/20 selection:text-blue-900">
+    <div className="min-h-screen ts-page-bg flex items-center justify-center p-4 md:p-8 font-sans selection:bg-blue-500/20 selection:text-blue-900">
       
       {/* Absolute Header Info (Pure premium aesthetics) */}
       <div className="absolute top-6 left-6 hidden md:flex items-center gap-2">
         <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></div>
-        <span className="text-[10px] uppercase tracking-widest font-bold text-slate-450 font-mono">
+        <span className="text-[10px] uppercase tracking-widest font-bold text-slate-400 font-mono">
           GPU RASTER ENGINE ONLINE
         </span>
       </div>
@@ -240,7 +240,7 @@ export default function App() {
             High DPI Rasterizer
           </div>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">SVG to PNG</h1>
-          <p className="text-slate-505 text-sm sm:text-base font-light text-slate-500">
+          <p className="text-sm sm:text-base font-light text-slate-500">
             Convert scalable vector paths into lossless raster graphics
           </p>
         </div>
@@ -311,15 +311,15 @@ export default function App() {
                 onClick={() => fileInputRef.current?.click()}
                 className={`flex-1 border-2 border-dashed rounded-2xl p-6 flex flex-col items-center justify-center transition-all cursor-pointer ${
                   isDragging 
-                    ? 'border-blue-550 bg-blue-50/20' 
-                    : 'border-slate-300 hover:border-blue-450 hover:bg-slate-50/50'
+                    ? 'border-blue-500 bg-blue-50/20' 
+                    : 'border-slate-300 hover:border-blue-400 hover:bg-slate-50/50'
                 }`}
               >
                 <div className="w-12 h-12 bg-blue-50 rounded-2xl flex items-center justify-center mb-3 text-blue-500 shadow-sm border border-blue-100/50">
                   <Upload className="w-6 h-6" />
                 </div>
                 
-                <p className="text-slate-750 font-bold text-center text-sm md:text-base">
+                <p className="text-slate-700 font-bold text-center text-sm md:text-base">
                   Paste vector workspace or drop SVG
                 </p>
                 <p className="text-slate-400 text-xs mt-1 text-center">
@@ -469,9 +469,9 @@ export default function App() {
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
             Local Compiler
           </span>
-          <span>•</span>
+          <span>â€¢</span>
           <span>Lossless HD</span>
-          <span>•</span>
+          <span>â€¢</span>
           <span>DPI Multiplier</span>
         </div>
 
@@ -479,4 +479,5 @@ export default function App() {
     </div>
   );
 }
+
 

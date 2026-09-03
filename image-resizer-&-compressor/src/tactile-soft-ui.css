@@ -1,5 +1,5 @@
-/*
- * Tactile Soft UI 2.0 — Micro-Neomorphism Design System
+﻿/*
+ * Tactile Soft UI 2.0 â€” Micro-Neomorphism Design System
  * Vibe: Fusion of modern Flat UI and tactile physical hardware controls.
  * Visuals: Soft inner shadows (inset), realistic light/dark soft dropshadows,
  *          and metallic button textures.
@@ -15,14 +15,14 @@
  * ============================================================ */
 
 :root {
-  /* Surface layers – subtle off-white stack */
+  /* Surface layers â€“ subtle off-white stack */
   --ts-soft-bg:           #f0f2f5;
   --ts-panel:             #e8ecef;
   --ts-panel-hover:       #dde1e6;
   --ts-surface:           #ffffff;
   --ts-surface-strong:    #f8fafc;
 
-  /* Tactile shadows (light source at 135°) */
+  /* Tactile shadows (light source at 135Â°) */
   --ts-shadow-light:      12px 12px 24px #d6d9e0;
   --ts-shadow-dark:       -12px -12px 24px #ffffff;
   --ts-shadow-inset-light: inset 4px 4px 8px #ffffff;
@@ -122,7 +122,7 @@ body {
  * 4. TACTILE PANEL / CARD COMPONENTS
  * ============================================================ */
 
-/* Soft neomorphic card — the foundational container */
+/* Soft neomorphic card â€” the foundational container */
 .ts-card {
   background: var(--ts-surface);
   border-radius: 1.5rem;
@@ -301,7 +301,7 @@ body {
     0 0 0 3px var(--ts-accent-shadow);
 }
 
-/* Toggle switch — tactile hardware-style */
+/* Toggle switch â€” tactile hardware-style */
 .ts-toggle {
   position: relative;
   display: inline-block;
@@ -352,7 +352,7 @@ body {
   transform: translateX(0.75rem);
 }
 
-/* Range slider — tactile thumb */
+/* Range slider â€” tactile thumb */
 .ts-range {
   -webkit-appearance: none;
   width: 100%;
@@ -513,15 +513,9 @@ body {
     box-shadow: var(--ts-shadow-inset-light), var(--ts-shadow-inset-dark);
   }
 
-  /* Tactile button — use in place of bg-white/flat */
-  .btn-tactile {
-    @apply ts-btn;
-  }
+  
 
-  /* Tactile button primary */
-  .btn-tactile-primary {
-    @apply ts-btn-primary;
-  }
+  
 
   /* Haptic click active state */
   .haptic-click:active {
@@ -534,7 +528,7 @@ body {
  * ============================================================ */
 
 @layer components {
-  /* Soft neomorphic cards — enhance bg-white / bg-white/N containers */
+  /* Soft neomorphic cards â€” enhance bg-white / bg-white/N containers */
   .bg-white\.\/40,
   .bg-white\/40,
   .bg-white\/50,
@@ -565,7 +559,7 @@ body {
       inset -3px -3px 8px #ffffff40 !important;
   }
 
-  /* Tactile buttons — override flat btn styles */
+  /* Tactile buttons â€” override flat btn styles */
   button,
   .ts-btn,
   [role="button"] {
@@ -594,7 +588,7 @@ body {
       -10px -10px 20px #ffffff;
   }
 
-  /* Tactile input fields — add inner inset shadows */
+  /* Tactile input fields â€” add inner inset shadows */
   input[type="text"],
   input[type="email"],
   input[type="password"],
@@ -714,7 +708,7 @@ body {
     background: var(--ts-border-hover);
   }
 
-  /* Tactile decorative orbs — soft blur */
+  /* Tactile decorative orbs â€” soft blur */
   .blur-3xl {
     filter: blur(80px);
   }
@@ -794,3 +788,4 @@ body {
       -12px -12px 24px #334155;
   }
 }
+

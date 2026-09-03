@@ -312,7 +312,7 @@ export default function App() {
   };
 
   return (
-    <div className="ts-page-bg\ min-h-screen\ py-12\ px-4\ sm:px-6\ lg:px-8\ max-w-7xl\ mx-auto" id="jwt-debugger-root">
+    <div className="ts-page-bg min-h-screen\ py-12\ px-4\ sm:px-6\ lg:px-8\ max-w-7xl\ mx-auto" id="jwt-debugger-root">
       
       {/* --- App Header & Descriptive Titles --- */}
       <div className="text-center mb-9" id="app-title-wrapper">
@@ -883,4 +883,5 @@ function AlertSquare() {
     </svg>
   );
 }
+
 

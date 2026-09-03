@@ -1,6 +1,0 @@
-{
-  "name": "HTML Entity Encoder & Decoder",
-  "description": "An elegant, real-time glassmorphic HTML custom entity encoder and decoder with comprehensive and basic mappings.",
-  "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
