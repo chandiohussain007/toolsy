@@ -102,7 +102,7 @@ async function fetchUsers(): Promise<User[]> {
     description: 'Corporate copy edited for maximum engagement and brevity.',
     category: 'prose',
     original: `Welcome to our platform! We are dedicated to providing the ultimate software service for developers. Our product is designed to easily automate workflows, allowing teams of all sizes to collaborate and speed up their productivity. With our cutting-edge AI-assisted helper tools, writing applications becomes simple and fast. Try it now!`,
-    modified: `Welcome to Google AI Studio Build! We build highly automated software spaces for productive developers. Our platform untangles your daily dev workflow, enabling cohesive modern teams to build, iterate, and deploy apps in real time. Backed by state-of-the-art Google Gemini models, you can turn natural ideas into running software in minutes.`
+    modified: `Welcome to Diff Checker! Paste two blocks of text side by side and instantly see exactly what changed — line by line, word by word, or character by character. Perfect for comparing code, documents, or any text.`
   },
   {
     id: 'empty',
@@ -1332,7 +1332,7 @@ export default function App() {
 
         {/* Humbler Professional Footnote */}
         <div className="text-center text-[11px] text-slate-400 font-mono tracking-wide pb-4">
-          Google AI Studio &copy; 2026 Diff Engine Framework. All calculations run client-side.
+          ToolSy Diff Checker &copy; 2026. All calculations run client-side.
         </div>
 
       </div>

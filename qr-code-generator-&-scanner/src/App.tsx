@@ -1592,7 +1592,7 @@ export default function App() {
 
       {/* Modern, clean aesthetic credit line */}
       <footer className="w-full text-center py-6 text-[11px] text-neutral-500 tracking-wider font-mono z-10" id="app-footer">
-        QR Studio â€¢ Built with Google AI Studio
+        QR Studio — ToolSy
       </footer>
 
     </div>
