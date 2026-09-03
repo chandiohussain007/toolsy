@@ -1,0 +1,16 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";`n@import "./tactile-soft-ui.css";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: radial-gradient(ellipse at top, #f8fafc, #f1f5f9), radial-gradient(ellipse at bottom, #e2e8f0, #cbd5e1);
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+  overflow-x: hidden;
+}
+

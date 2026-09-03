@@ -1,0 +1,6 @@
+{
+  "name": "QR Code Generator & Scanner",
+  "description": "A dual-purpose utility to generate custom QR codes from text/URLs and scan them using standard camera streams or custom image uploads.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

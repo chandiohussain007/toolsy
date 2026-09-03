@@ -1,0 +1,6 @@
+{
+  "name": "Image Resizer & Compressor",
+  "description": "A clean, premium Apple-style image resizer and compressor utility featuring drag-and-drop, aspect-ratio lock, quality controls, and client-side canvas-driven processing.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

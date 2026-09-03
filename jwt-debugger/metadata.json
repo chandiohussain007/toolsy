@@ -1,0 +1,6 @@
+{
+  "name": "JWT Debugger",
+  "description": "A highly secure, client-side JWT debugger and parser with real-time color-coded breakdown.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

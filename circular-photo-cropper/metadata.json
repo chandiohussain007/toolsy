@@ -1,0 +1,6 @@
+{
+  "name": "Circular Photo Cropper",
+  "description": "An elegant, Apple-inspired utility tool to upload, zoom, pan, and crop images into transparent circular PNGs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

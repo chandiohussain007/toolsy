@@ -1,0 +1,6 @@
+{
+  "name": "Images to PDF Converter",
+  "description": "Convert multiple JPG, JPEG, and PNG images into a single, high-quality PDF document. Easily preview, reorder, and download completely client-side.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

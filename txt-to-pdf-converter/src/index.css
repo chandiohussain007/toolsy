@@ -1,0 +1,91 @@
+﻿@import "tailwindcss";`n@import "./tactile-soft-ui.css";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Lora", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-beige: #fbfbf9;
+  --color-brand-charcoal: #1c1c1e;
+  --color-brand-accent: #6366f1;
+}
+
+/* Base resets & custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Glassmorphism adjustments */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/* High Fidelity Native Print Style Optimization */
+@media print {
+  /* Hide the main app wrapper, navigation, floating controls, headers */
+  .no-print {
+    display: none !important;
+  }
+
+  /* Force print target to take over the whole viewport */
+  html, body {
+    width: 210mm !important; /* Standard A4 */
+    height: 297mm !important;
+    background: #ffffff !important;
+    color: #111111 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Target exact sheet to print on its own */
+  .print-sheet {
+    display: block !important;
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 210mm !important;
+    box-sizing: border-box !important;
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0 !important;
+    padding: var(--print-padding, 20mm) !important;
+    font-size: var(--print-font-size, 11pt) !important;
+    line-height: 1.6 !important;
+    background: white !important;
+    page-break-after: always !important;
+  }
+
+  /* Support multiple page layout breaking nicely */
+  .print-page-break {
+    page-break-before: always !important;
+    margin-top: 20mm !important;
+    border-top: 1px solid #eeeeee !important;
+    padding-top: 10mm !important;
+  }
+}
+

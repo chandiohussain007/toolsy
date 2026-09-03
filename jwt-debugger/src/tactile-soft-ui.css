@@ -1,0 +1,796 @@
+/*
+ * Tactile Soft UI 2.0 — Micro-Neomorphism Design System
+ * Vibe: Fusion of modern Flat UI and tactile physical hardware controls.
+ * Visuals: Soft inner shadows (inset), realistic light/dark soft dropshadows,
+ *          and metallic button textures.
+ * Micro-Interactions: Active-state animations simulating a hardware haptic click
+ *            (subtle scale/translate-y shift on click).
+ *
+ * Include this file BEFORE importing Tailwind's base styles so the custom
+ * properties and keyframes become available as theme tokens.
+ */
+
+/* ============================================================
+ * 1. TACTILE COLOR PALETTE
+ * ============================================================ */
+
+:root {
+  /* Surface layers – subtle off-white stack */
+  --ts-soft-bg:           #f0f2f5;
+  --ts-panel:             #e8ecef;
+  --ts-panel-hover:       #dde1e6;
+  --ts-surface:           #ffffff;
+  --ts-surface-strong:    #f8fafc;
+
+  /* Tactile shadows (light source at 135°) */
+  --ts-shadow-light:      12px 12px 24px #d6d9e0;
+  --ts-shadow-dark:       -12px -12px 24px #ffffff;
+  --ts-shadow-inset-light: inset 4px 4px 8px #ffffff;
+  --ts-shadow-inset-dark:  inset -4px -4px 8px #d6d9e0;
+
+  /* Pressed / active inner shadow (deeper) */
+  --ts-inset-pressed:     inset 2px 2px 6px #d6d9e0, inset -2px -2px 6px #ffffff;
+
+  /* Metallic button gradient textures */
+  --ts-metal-1:           linear-gradient(135deg, #e3e9f0 0%, #d6d9e0 100%);
+  --ts-metal-2:           linear-gradient(135deg, #f0f2f5 0%, #e8ecef 50%, #dde1e6 100%);
+
+  /* Accent colors (hardware-blue family) */
+  --ts-accent:            #2563eb;
+  --ts-accent-hover:      #1d4ed8;
+  --ts-accent-shadow:     #2563eb40;
+
+  /* Text hierarchy */
+  --ts-text-primary:     #1e293b;
+  --ts-text-secondary:   #64748b;
+  --ts-text-tertiary:    #94a3b8;
+
+  /* Border / outline */
+  --ts-border:            #e2e8f0;
+  --ts-border-hover:      #cbd5e1;
+
+  /* Focus ring */
+  --ts-focus-ring:        #3b82f6;
+}
+
+/* Dark-mode variants (opt-in via .dark body class) */
+.dark {
+  --ts-soft-bg:           #1e293b;
+  --ts-panel:             #334155;
+  --ts-panel-hover:       #3f4d64;
+  --ts-surface:           #273449;
+  --ts-surface-strong:    #1e293b;
+
+  --ts-shadow-light:      12px 12px 24px #0f172a;
+  --ts-shadow-dark:       -12px -12px 24px #2d3b52;
+  --ts-shadow-inset-light: inset 4px 4px 8px #2d3b52;
+  --ts-shadow-inset-dark:  inset -4px -4px 8px #0f172a;
+
+  --ts-inset-pressed:     inset 2px 2px 6px #0f172a, inset -2px -2px 6px #2d3b52;
+
+  --ts-metal-1:           linear-gradient(135deg, #2d3b52 0%, #1e293b 100%);
+  --ts-metal-2:           linear-gradient(135deg, #334155 0%, #3a4a64 50%, #334155 100%);
+
+  --ts-accent:            #3b82f6;
+  --ts-accent-hover:      #60a5fa;
+  --ts-accent-shadow:     #3b82f640;
+
+  --ts-text-primary:     #f1f5f9;
+  --ts-text-secondary:   #94a3b8;
+  --ts-text-tertiary:    #64748b;
+
+  --ts-border:            #334155;
+  --ts-border-hover:      #475569;
+
+  --ts-focus-ring:        #3b82f6;
+}
+
+/* ============================================================
+ * 2. TACTILE BASE LAYER
+ * ============================================================ */
+
+body {
+  background: var(--ts-soft-bg);
+  color: var(--ts-text-primary);
+  font-family: var(--font-sans, "Inter", ui-sans-serif, system-ui, sans-serif);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ============================================================
+ * 3. MICRO-INTERACTION KEYFRAMES
+ * ============================================================ */
+
+@keyframes ts-haptic-click {
+  0%   { transform: scale(1) translate(0, 0); }
+  50%  { transform: scale(0.97) translate(0, 2px); }
+  100% { transform: scale(1) translate(0, 0); }
+}
+
+@keyframes ts-btn-inset {
+  0%   { box-shadow: var(--ts-shadow-light), var(--ts-shadow-dark); }
+  100% { box-shadow: var(--ts-inset-pressed); }
+}
+
+@keyframes ts-subtle-pulse {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.7; }
+}
+
+/* ============================================================
+ * 4. TACTILE PANEL / CARD COMPONENTS
+ * ============================================================ */
+
+/* Soft neomorphic card — the foundational container */
+.ts-card {
+  background: var(--ts-surface);
+  border-radius: 1.5rem;
+  border: 1px solid var(--ts-border);
+  box-shadow:
+    var(--ts-shadow-light),
+    var(--ts-shadow-dark);
+  transition:
+    box-shadow 0.25s cubic-bezier(0.25, 0.1, 0.25, 1),
+    border-color 0.25s cubic-bezier(0.25, 0.1, 0.25, 1),
+    transform 0.15s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.ts-card:hover {
+  box-shadow:
+    16px 16px 32px #d6d9e0,
+    -16px -16px 32px #ffffff;
+  border-color: var(--ts-border-hover);
+}
+
+.ts-card-active {
+  box-shadow: var(--ts-inset-pressed);
+  transform: scale(0.99);
+}
+
+/* Glass overlay variant */
+.ts-glass {
+  background: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 1.5rem;
+  box-shadow:
+    var(--ts-shadow-light),
+    var(--ts-shadow-dark);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* ============================================================
+ * 5. TACTILE BUTTONS
+ * ============================================================ */
+
+.ts-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.625rem 1.25rem;
+  font-family: var(--font-sans, "Inter", ui-sans-serif, system-ui, sans-serif);
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  background: var(--ts-metal-2);
+  color: var(--ts-text-primary);
+  box-shadow:
+    var(--ts-shadow-light),
+    var(--ts-shadow-dark);
+  transition:
+    box-shadow 0.2s cubic-bezier(0.25, 0.1, 0.25, 1),
+    transform 0.15s cubic-bezier(0.4, 0, 0.2, 1),
+    background 0.2s ease;
+}
+
+/* Hardware haptic click on press */
+.ts-btn:active {
+  transform: scale(0.97) translate(0, 2px);
+  box-shadow: var(--ts-inset-pressed);
+  animation: ts-haptic-click 0.25s ease-out forwards;
+}
+
+.ts-btn:hover {
+  box-shadow:
+    8px 8px 16px #d6d9e0,
+    -8px -8px 16px #ffffff;
+}
+
+/* Primary (accent) variant */
+.ts-btn-primary {
+  background: var(--ts-accent);
+  color: #ffffff;
+  border: none;
+  box-shadow:
+    8px 8px 16px var(--ts-accent-shadow),
+    -4px -4px 8px rgba(255, 255, 255, 0.4);
+}
+
+.ts-btn-primary:hover {
+  background: var(--ts-accent-hover);
+  box-shadow:
+    12px 12px 24px var(--ts-accent-shadow),
+    -6px -6px 12px rgba(255, 255, 255, 0.5);
+}
+
+.ts-btn-primary:active {
+  transform: scale(0.97) translate(0, 2px);
+  box-shadow: var(--ts-inset-pressed);
+  animation: ts-haptic-click 0.2s ease-out forwards;
+}
+
+/* Toggle / active state */
+.ts-btn-active {
+  background: var(--ts-accent);
+  color: #ffffff;
+  box-shadow: var(--ts-inset-pressed);
+}
+
+/* Icon button */
+.ts-btn-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  border-radius: 0.75rem;
+}
+
+/* ============================================================
+ * 6. TACTILE INPUTS & CONTROLS
+ * ============================================================ */
+
+.ts-input {
+  background: var(--ts-surface-strong);
+  border: 1px solid var(--ts-border);
+  border-radius: 0.75rem;
+  padding: 0.625rem 1rem;
+  font-family: var(--font-sans, "Inter", ui-sans-serif, system-ui, sans-serif);
+  font-size: 0.875rem;
+  color: var(--ts-text-primary);
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+  box-shadow:
+    inset 3px 3px 6px #d6d9e0,
+    inset -3px -3px 6px #ffffff;
+}
+
+.ts-input:focus {
+  border-color: var(--ts-focus-ring);
+  box-shadow:
+    inset 3px 3px 6px #d6d9e0,
+    inset -3px -3px 6px #ffffff,
+    0 0 0 3px var(--ts-accent-shadow);
+}
+
+.ts-input::placeholder {
+  color: var(--ts-text-tertiary);
+}
+
+/* Textarea */
+.ts-textarea {
+  background: var(--ts-surface-strong);
+  border: 1px solid var(--ts-border);
+  border-radius: 1rem;
+  padding: 0.875rem 1.125rem;
+  font-family: var(--font-mono, "JetBrains Mono", ui-monospace, SFMono-Regular, monospace);
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: var(--ts-text-primary);
+  resize: vertical;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+  box-shadow:
+    inset 3px 3px 6px #d6d9e040,
+    inset -3px -3px 6px #ffffff40;
+}
+
+.ts-textarea:focus {
+  border-color: var(--ts-focus-ring);
+  box-shadow:
+    inset 3px 3px 6px #d6d9e040,
+    inset -3px -3px 6px #ffffff40,
+    0 0 0 3px var(--ts-accent-shadow);
+}
+
+/* Toggle switch — tactile hardware-style */
+.ts-toggle {
+  position: relative;
+  display: inline-block;
+  width: 2.75rem;
+  height: 1.5rem;
+}
+
+.ts-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.ts-toggle .ts-slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  border-radius: 9999px;
+  background: var(--ts-panel);
+  border: 1px solid var(--ts-border);
+  box-shadow:
+    var(--ts-shadow-light),
+    var(--ts-shadow-dark);
+  transition: 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.ts-toggle .ts-slider:before {
+  content: "";
+  position: absolute;
+  height: 1.1rem;
+  width: 1.1rem;
+  left: 0.25rem;
+  bottom: 0.2rem;
+  border-radius: 50%;
+  background: var(--ts-metal-2);
+  box-shadow:
+    var(--ts-shadow-light),
+    var(--ts-shadow-dark);
+  transition: 0.25s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.ts-toggle input:checked + .ts-slider {
+  background: var(--ts-accent);
+  border-color: var(--ts-accent);
+}
+
+.ts-toggle input:checked + .ts-slider:before {
+  transform: translateX(0.75rem);
+}
+
+/* Range slider — tactile thumb */
+.ts-range {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 0.5rem;
+  border-radius: 0.25rem;
+  background: var(--ts-panel);
+  border: 1px solid var(--ts-border);
+  outline: none;
+  box-shadow:
+    inset 2px 2px 4px #d6d9e040;
+}
+
+.ts-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  border: 2px solid var(--ts-border);
+  background: var(--ts-metal-1);
+  box-shadow:
+    6px 6px 12px #d6d9e0,
+    -6px -6px 12px #ffffff;
+  cursor: pointer;
+  transition: box-shadow 0.2s ease;
+}
+
+.ts-range::-webkit-slider-thumb:active {
+  box-shadow: var(--ts-inset-pressed);
+  transform: scale(0.95);
+}
+
+/* ============================================================
+ * 7. TACTILE TAB / NAVIGATION
+ * ============================================================ */
+
+.ts-tab-list {
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  background: var(--ts-panel);
+  border-radius: 0.875rem;
+  border: 1px solid var(--ts-border);
+}
+
+.ts-tab {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border-radius: 0.625rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  background: transparent;
+  color: var(--ts-text-secondary);
+  border: none;
+  transition: all 0.2s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.ts-tab-active {
+  background: var(--ts-surface);
+  color: var(--ts-text-primary);
+  box-shadow:
+    inset 2px 2px 4px #d6d9e040,
+    4px 4px 8px #d6d9e0,
+    -4px -4px 8px #ffffff;
+}
+
+.ts-tab:hover:not(.ts-tab-active) {
+  color: var(--ts-text-primary);
+}
+
+/* ============================================================
+ * 8. TACTILE SCROLLBAR
+ * ============================================================ */
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ts-soft-bg);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ts-border);
+  border-radius: 9999px;
+  border: 2px solid var(--ts-soft-bg);
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ts-border-hover);
+}
+
+/* ============================================================
+ * 9. TACTILE LAYOUT HELPERS
+ * ============================================================ */
+
+.ts-page-bg {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 20% 50%, #e8ecef 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, #e0e4ea 0%, transparent 50%),
+    var(--ts-soft-bg);
+}
+
+.ts-main-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+}
+
+/* Soft divider */
+.ts-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--ts-border) 50%,
+    transparent
+  );
+}
+
+/* ============================================================
+ * 10. TAILWIND INTEGRATION UTILITIES
+ * ============================================================ */
+
+@layer utilities {
+  /* Override Tailwind card shadows with tactile soft shadows */
+  .ts-shadow-sm {
+    box-shadow:
+      4px 4px 12px #d6d9e0,
+      -4px -4px 12px #ffffff;
+  }
+
+  .ts-shadow-md {
+    box-shadow:
+      8px 8px 24px #d6d9e0,
+      -8px -8px 24px #ffffff;
+  }
+
+  .ts-shadow-lg {
+    box-shadow:
+      12px 12px 32px #d6d9e0,
+      -12px -12px 32px #ffffff;
+  }
+
+  .ts-shadow-xl {
+    box-shadow:
+      16px 16px 40px #d6d9e0,
+      -16px -16px 40px #ffffff;
+  }
+
+  /* Inset inner shadow for pressed states */
+  .ts-inset {
+    box-shadow: var(--ts-shadow-inset-light), var(--ts-shadow-inset-dark);
+  }
+
+  /* Tactile button — use in place of bg-white/flat */
+  .btn-tactile {
+    @apply ts-btn;
+  }
+
+  /* Tactile button primary */
+  .btn-tactile-primary {
+    @apply ts-btn-primary;
+  }
+
+  /* Haptic click active state */
+  .haptic-click:active {
+    animation: ts-haptic-click 0.25s ease-out;
+  }
+}
+
+/* ============================================================
+ * 11. TACTILE OVERRIDES FOR COMMON TAILWIND PATTERNS
+ * ============================================================ */
+
+@layer components {
+  /* Soft neomorphic cards — enhance bg-white / bg-white/N containers */
+  .bg-white\.\/40,
+  .bg-white\/40,
+  .bg-white\/50,
+  .bg-white\/60,
+  .bg-white\/70,
+  .bg-white\/80 {
+    box-shadow:
+      inset 3px 3px 8px #d6d9e040,
+      inset -3px -3px 8px #ffffff40,
+      8px 8px 24px #d6d9e0,
+      -8px -8px 24px #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+  }
+
+  /* Flat bg-white cards get tactile shadow instead of flat shadow */
+  .bg-white {
+    box-shadow:
+      8px 8px 24px #d6d9e0,
+      -8px -8px 24px #ffffff !important;
+  }
+
+  /* Glass panels with backdrop-blur */
+  .bg-white\/30.backdrop-blur,
+  .bg-slate-50\/50.backdrop-blur,
+  .bg-white\/50.backdrop-blur {
+    box-shadow:
+      inset 3px 3px 8px #d6d9e040,
+      inset -3px -3px 8px #ffffff40 !important;
+  }
+
+  /* Tactile buttons — override flat btn styles */
+  button,
+  .ts-btn,
+  [role="button"] {
+    box-shadow:
+      6px 6px 12px #d6d9e0,
+      -6px -6px 12px #ffffff;
+    transition:
+      box-shadow 0.2s cubic-bezier(0.25, 0.1, 0.25, 1),
+      transform 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  button:active,
+  .ts-btn:active,
+  [role="button"]:active {
+    transform: scale(0.97) translate(0, 2px);
+    box-shadow:
+      inset 2px 2px 6px #d6d9e0,
+      inset -2px -2px 6px #ffffff;
+  }
+
+  button:hover,
+  .ts-btn:hover,
+  [role="button"]:hover {
+    box-shadow:
+      10px 10px 20px #d6d9e0,
+      -10px -10px 20px #ffffff;
+  }
+
+  /* Tactile input fields — add inner inset shadows */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  input[type="url"],
+  input[type="tel"],
+  textarea,
+  select {
+    box-shadow:
+      inset 3px 3px 6px #d6d9e040,
+      inset -3px -3px 6px #ffffff40 !important;
+    border: 1px solid var(--ts-border) !important;
+    border-radius: 0.75rem !important;
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus {
+    box-shadow:
+      inset 3px 3px 6px #d6d9e040,
+      inset -3px -3px 6px #ffffff40,
+      0 0 0 3px var(--ts-accent-shadow) !important;
+    border-color: var(--ts-focus-ring) !important;
+  }
+
+  /* Tactile range slider thumb */
+  input[type="range"] {
+    -webkit-appearance: none;
+    height: 0.5rem;
+    border-radius: 0.25rem;
+    background: var(--ts-panel);
+    outline: none;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 50%;
+    border: 2px solid var(--ts-border);
+    background: var(--ts-metal-1);
+    box-shadow:
+      6px 6px 12px #d6d9e0,
+      -6px -6px 12px #ffffff;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+  }
+
+  input[type="range"]::-webkit-slider-thumb:active {
+    box-shadow:
+      inset 2px 2px 6px #d6d9e0,
+      inset -2px -2px 6px #ffffff;
+    transform: scale(0.95);
+  }
+
+  /* Tactile color input */
+  input[type="color"] {
+    padding: 0;
+    border: 2px solid var(--ts-border);
+    border-radius: 0.75rem;
+    box-shadow:
+      6px 6px 12px #d6d9e0,
+      -6px -6px 12px #ffffff;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+  }
+
+  input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+  }
+
+  input[type="color"]::-webkit-color-swatch {
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow:
+      inset 2px 2px 4px #d6d9e040;
+  }
+
+  /* Tactile tab switchers */
+  .grid.grid-cols-2.p-1.bg-slate-100,
+  .grid.grid-cols-2.p-1 {
+    background: var(--ts-panel);
+    border: 1px solid var(--ts-border);
+    border-radius: 0.875rem;
+    box-shadow:
+      inset 2px 2px 6px #d6d9e040,
+      4px 4px 12px #d6d9e0,
+      -4px -4px 12px #ffffff;
+  }
+
+  /* Tactile file input buttons */
+  input[type="file"] {
+    border-radius: 0.5rem;
+  }
+
+  /* Tactile scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--ts-soft-bg);
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--ts-border);
+    border-radius: 9999px;
+    border: 2px solid var(--ts-soft-bg);
+    background-clip: padding-box;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--ts-border-hover);
+  }
+
+  /* Tactile decorative orbs — soft blur */
+  .blur-3xl {
+    filter: blur(80px);
+  }
+
+  /* Enhance shadow-xs to tactile */
+  .shadow-xs {
+    box-shadow:
+      4px 4px 12px #d6d9e0,
+      -4px -4px 12px #ffffff !important;
+  }
+
+  .shadow-sm {
+    box-shadow:
+      4px 4px 12px #d6d9e0,
+      -4px -4px 12px #ffffff !important;
+  }
+
+  .shadow-md {
+    box-shadow:
+      8px 8px 24px #d6d9e0,
+      -8px -8px 24px #ffffff !important;
+  }
+
+  .shadow-lg {
+    box-shadow:
+      12px 12px 32px #d6d9e0,
+      -12px -12px 32px #ffffff !important;
+  }
+
+  .shadow-xl {
+    box-shadow:
+      16px 16px 40px #d6d9e0,
+      -16px -16px 40px #ffffff !important;
+  }
+
+  .shadow-2xl {
+    box-shadow:
+      20px 20px 48px #d6d9e0,
+      -20px -20px 48px #ffffff !important;
+  }
+
+  /* Dark mode adjustments */
+  .dark .bg-white\/40,
+  .dark .bg-white\/50,
+  .dark .bg-white\/60 {
+    box-shadow:
+      inset 4px 4px 12px #0f172a,
+      inset -4px -4px 12px #1e293b,
+      8px 8px 24px #0f172a,
+      -8px -8px 24px #1e293b !important;
+  }
+
+  .dark .bg-white {
+    box-shadow:
+      8px 8px 24px #0f172a,
+      -8px -8px 24px #1e293b !important;
+  }
+
+  .dark button,
+  .dark .ts-btn {
+    box-shadow:
+      6px 6px 12px #0f172a,
+      -6px -6px 12px #334155;
+  }
+
+  button:hover,
+  .ts-btn:hover {
+    box-shadow:
+      10px 10px 20px #d6d9e0,
+      -10px -10px 20px #ffffff;
+  }
+
+  .dark button:hover,
+  .dark .ts-btn:hover {
+    box-shadow:
+      12px 12px 24px #0f172a,
+      -12px -12px 24px #334155;
+  }
+}
