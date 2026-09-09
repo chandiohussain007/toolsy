@@ -1,5 +1,5 @@
-﻿import React, { useState } from 'react';
-import { ExternalLink, Search, Sparkles, Layers, Box, Cpu } from 'lucide-react';
+﻿import { useState } from 'react';
+import { ExternalLink, Search, Sparkles, Box, Cpu } from 'lucide-react';
 
 const tools = [
   {
@@ -45,14 +45,14 @@ const tools = [
     url: 'https://diff-checker-toolsy.vercel.app'
   },
   {
-    id: 'html-entity-encoder-&-decoder',
+    id: 'html-entity-encoder-decoder',
     name: 'HTML Entity Encoder & Decoder',
     description: 'An elegant, real-time glassmorphic HTML custom entity encoder and decoder.',
     tags: ['Text', 'Web', 'Developer Tools'],
     url: 'https://html-entity-encoder-decoder-toolsy.vercel.app'
   },
   {
-    id: 'image-resizer-&-compressor',
+    id: 'image-resizer-compressor',
     name: 'Image Resizer & Compressor',
     description: 'A clean, premium Apple-style image resizer and compressor utility featuring drag-and-drop and quality controls.',
     tags: ['Image', 'Compression'],
@@ -66,7 +66,7 @@ const tools = [
     url: 'https://images-to-pdf-converter-toolsy.vercel.app'
   },
   {
-    id: 'json-formatter-&-validator',
+    id: 'json-formatter-validator',
     name: 'JSON Formatter & Validator',
     description: 'A premium aesthetic JSON formatter, validator, and interactive tree visualizer with real-time error tracking.',
     tags: ['JSON', 'Validator', 'Developer Tools'],
@@ -94,7 +94,7 @@ const tools = [
     url: 'https://pdf-watermarker-toolsy.vercel.app'
   },
   {
-    id: 'qr-code-generator-&-scanner',
+    id: 'qr-code-generator-scanner',
     name: 'QR Code Generator & Scanner',
     description: 'A dual-purpose utility to generate custom QR codes from text/URLs and scan them using standard camera streams.',
     tags: ['QR', 'Generator', 'Utility'],
@@ -129,7 +129,7 @@ const tools = [
     url: 'https://url-encoder-decoder-toolsy.vercel.app'
   },
   {
-    id: 'word-&-character-counter',
+    id: 'word-character-counter',
     name: 'Word & Character Counter',
     description: 'An elegant, interactive real-time Word and Character Counter tool featuring reading/speaking estimates.',
     tags: ['Text', 'Counter'],

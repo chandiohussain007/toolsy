@@ -25,19 +25,19 @@ Every tool is a standalone **Vite + React + TypeScript** app, styled with **Tail
 | [⭕ Circular Photo Cropper](./circular-photo-cropper) | Crop images into transparent circular PNGs |
 | [🎨 Color Picker from Image](./color-picker-from-image) | Extract exact pixel colors from any image |
 | [📄 Diff Checker](./diff-checker) | Compare two texts with line/word/char highlighting |
-| [🔢 HTML Entity Encoder & Decoder](./html-entity-encoder-&-decoder) | Encode & decode HTML entities |
-| [📐 Image Resizer & Compressor](./image-resizer-&-compressor) | Resize, compress, and export images |
+| [🔢 HTML Entity Encoder & Decoder](./html-entity-encoder-decoder) | Encode & decode HTML entities |
+| [📐 Image Resizer & Compressor](./image-resizer-compressor) | Resize, compress, and export images |
 | [🗂️ Images to PDF Converter](./images-to-pdf-converter) | Combine multiple images into a single PDF |
-| [📋 JSON Formatter & Validator](./json-formatter-&-validator) | Format, validate, and explore JSON interactively |
+| [📋 JSON Formatter & Validator](./json-formatter-validator) | Format, validate, and explore JSON interactively |
 | [🔑 JWT Debugger](./jwt-debugger) | Decode and inspect JSON Web Tokens |
 | [📤 PDF Page Extractor](./pdf-page-extractor) | Extract specific pages from PDF files |
 | [💧 PDF Watermarker](./pdf-watermarker) | Add custom text watermarks to PDFs |
-| [📱 QR Code Generator & Scanner](./qr-code-generator-&-scanner) | Generate & scan QR codes |
+| [📱 QR Code Generator & Scanner](./qr-code-generator-scanner) | Generate & scan QR codes |
 | [🔷 SVG to PNG Converter](./SVG-PNG\)) | Convert SVG vectors to high-res PNG raster |
 | [📝 TXT to PDF Converter](./txt-to-pdf-converter) | Convert plain text to beautifully typeset PDFs |
 | [📏 Unit Converter](./unit-converter) | Convert between length, weight, temp, and more |
 | [🔗 URL Encoder/Decoder](./url-encoder-decoder) | Encode, decode, and parse URL strings |
-| [✍️ Word & Character Counter](./word-&-character-counter) | Count words, chars, readability, and more |
+| [✍️ Word & Character Counter](./word-character-counter) | Count words, chars, readability, and more |
 
 ---
 
