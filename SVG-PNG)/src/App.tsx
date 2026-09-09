@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
   Upload, Download, FileCode, CheckCircle, AlertCircle, 
-  Settings, Image, Layers, Sparkles, RefreshCw, X, ArrowRight
+    Settings, Image as ImageIcon, Layers, Sparkles, RefreshCw, X, ArrowRight
 } from 'lucide-react';
 
 const DEFAULT_SVG = `<svg viewBox="0 0 100 100" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
@@ -416,7 +416,7 @@ export default function App() {
           {/* Real-time preview panel */}
           <div className="flex flex-col gap-2.5 bg-white/40 p-5 rounded-[1.7rem] border border-white/20 h-full">
             <span className="flex items-center gap-1.5 text-xs font-extrabold text-slate-600 uppercase tracking-widest font-mono">
-              <Image className="w-3.5 h-3.5 text-slate-500" />
+                            <ImageIcon className="w-3.5 h-3.5 text-slate-500" />
               Real-time Preview
             </span>
             

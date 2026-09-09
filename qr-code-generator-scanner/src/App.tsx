@@ -16,7 +16,7 @@ import {
   VolumeX, 
   Trash2, 
   History, 
-  Image, 
+     Image as ImageIcon, 
   Video, 
   Globe, 
   ArrowRight,
@@ -960,7 +960,7 @@ export default function App() {
                           </div>
                         ) : (
                           <div className="w-16 h-16 bg-white/5 rounded-xl border border-dashed border-white/20 flex items-center justify-center text-neutral-500 shrink-0 select-none">
-                            <Image className="w-5 h-5 animate-pulse" />
+                                                        <ImageIcon className="w-5 h-5 animate-pulse" />
                           </div>
                         )}
 
