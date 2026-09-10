@@ -24,6 +24,13 @@ const tools = [
     url: 'https://case-converter-toolsy.vercel.app'
   },
   {
+    id: 'checklist-logo-card',
+    name: 'Checklist & Logo Card',
+    description: 'Design branded checklist cards with a custom logo and accent color, then export as high-resolution PNGs.',
+    tags: ['Design', 'Checklist'],
+    url: 'https://checklist-logo-card-toolsy.vercel.app'
+  },
+  {
     id: 'circular-photo-cropper',
     name: 'Circular Photo Cropper',
     description: 'An elegant utility tool to upload, zoom, pan, and crop images into transparent circular PNGs.',
@@ -50,6 +57,13 @@ const tools = [
     description: 'An elegant, real-time glassmorphic HTML custom entity encoder and decoder.',
     tags: ['Text', 'Web', 'Developer Tools'],
     url: 'https://html-entity-encoder-decoder-toolsy.vercel.app'
+  },
+  {
+    id: 'html2pdf',
+    name: 'HTML to PDF Converter',
+    description: 'Write HTML and CSS with a live preview, then export the rendered page as a high-quality PDF document.',
+    tags: ['PDF', 'HTML', 'Converter'],
+    url: 'https://html2pdf-toolsy.vercel.app'
   },
   {
     id: 'image-resizer-compressor',

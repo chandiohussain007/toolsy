@@ -1,6 +1,6 @@
 <h1 align="center">⚡ ToolSy</h1>
 <p align="center">
-  <strong>A collection of 19 premium, free, client-side web utility tools — all in one monorepo.</strong>
+  <strong>A collection of 21 premium, free, client-side web utility tools — all in one monorepo.</strong>
 </p>
 <p align="center">
   <a href="https://github.com/chandiohussain007/toolsy">
@@ -22,10 +22,12 @@ Every tool is a standalone **Vite + React + TypeScript** app, styled with **Tail
 | [🖼️ Background Remover](./background-remover) | Remove image backgrounds with auto-chroma & manual brushes |
 | [🔠 Base64 Encoder/Decoder](./base64-encoder-decoder) | Encode & decode text and files to/from Base64 |
 | [🔤 Case Converter](./case-converter) | Transform text between 10+ cases instantly |
+| [✅ Checklist & Logo Card](./checklist-logo-card) | Design branded checklist cards and export as PNG |
 | [⭕ Circular Photo Cropper](./circular-photo-cropper) | Crop images into transparent circular PNGs |
 | [🎨 Color Picker from Image](./color-picker-from-image) | Extract exact pixel colors from any image |
 | [📄 Diff Checker](./diff-checker) | Compare two texts with line/word/char highlighting |
 | [🔢 HTML Entity Encoder & Decoder](./html-entity-encoder-decoder) | Encode & decode HTML entities |
+| [🖥️ HTML to PDF Converter](./html2pdf) | Render HTML/CSS to a downloadable PDF |
 | [📐 Image Resizer & Compressor](./image-resizer-compressor) | Resize, compress, and export images |
 | [🗂️ Images to PDF Converter](./images-to-pdf-converter) | Combine multiple images into a single PDF |
 | [📋 JSON Formatter & Validator](./json-formatter-validator) | Format, validate, and explore JSON interactively |
