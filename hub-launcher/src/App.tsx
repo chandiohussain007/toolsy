@@ -7,147 +7,147 @@ const tools = [
     name: 'Background Remover',
     description: 'A premium, client-side utility tool to remove backgrounds from images with professional auto-chroma and manual brushes.',
     tags: ['Image', 'AI', 'Canvas'],
-    url: 'https://background-remover-toolsy.vercel.app'
+    url: 'https://removebg-swart-eight.vercel.app'
   },
   {
     id: 'base64-encoder-decoder',
     name: 'Base64 Encoder Decoder',
     description: 'An elegant, Apple-inspired utility to encode and decode text & files into Base64 format.',
     tags: ['Text', 'Encoding', 'Developer Tools'],
-    url: 'https://base64-encoder-decoder-toolsy.vercel.app'
+    url: 'https://encodeb64.vercel.app'
   },
   {
     id: 'case-converter',
     name: 'Case Converter',
     description: 'A premium, minimalist client-side text case converter featuring text transformation presets.',
     tags: ['Text', 'Formatting'],
-    url: 'https://case-converter-toolsy.vercel.app'
+    url: 'https://covert-case-three.vercel.app'
   },
   {
     id: 'checklist-logo-card',
     name: 'Checklist & Logo Card',
     description: 'Design branded checklist cards with a custom logo and accent color, then export as high-resolution PNGs.',
     tags: ['Design', 'Checklist'],
-    url: 'https://checklist-logo-card-toolsy.vercel.app'
+    url: 'https://chlogocard.vercel.app'
   },
   {
     id: 'circular-photo-cropper',
     name: 'Circular Photo Cropper',
     description: 'An elegant utility tool to upload, zoom, pan, and crop images into transparent circular PNGs.',
     tags: ['Image', 'Cropping'],
-    url: 'https://circular-photo-cropper-toolsy.vercel.app'
+    url: 'https://circlecut.vercel.app'
   },
   {
     id: 'color-picker-from-image',
     name: 'Color Picker from Image',
     description: 'Upload images, zoom in with a magnifying loupe, and extract exact pixel colors as HEX and RGB codes.',
     tags: ['Image', 'Color', 'Design'],
-    url: 'https://color-picker-from-image-toolsy.vercel.app'
+    url: 'https://what-color-murex.vercel.app'
   },
   {
     id: 'diff-checker',
     name: 'Diff Checker',
     description: 'A clean, beautiful premium text comparison and diff checker tool.',
     tags: ['Text', 'Comparison', 'Developer Tools'],
-    url: 'https://diff-checker-toolsy.vercel.app'
+    url: 'https://check-diff-eight.vercel.app'
   },
   {
     id: 'html-entity-encoder-decoder',
     name: 'HTML Entity Encoder & Decoder',
     description: 'An elegant, real-time glassmorphic HTML custom entity encoder and decoder.',
     tags: ['Text', 'Web', 'Developer Tools'],
-    url: 'https://html-entity-encoder-decoder-toolsy.vercel.app'
+    url: 'https://html-ed.vercel.app'
   },
   {
     id: 'html2pdf',
     name: 'HTML to PDF Converter',
     description: 'Write HTML and CSS with a live preview, then export the rendered page as a high-quality PDF document.',
     tags: ['PDF', 'HTML', 'Converter'],
-    url: 'https://html2pdf-toolsy.vercel.app'
+    url: 'https://html2pdf-tan.vercel.app'
   },
   {
     id: 'image-resizer-compressor',
     name: 'Image Resizer & Compressor',
     description: 'A clean, premium Apple-style image resizer and compressor utility featuring drag-and-drop and quality controls.',
     tags: ['Image', 'Compression'],
-    url: 'https://image-resizer-compressor-toolsy.vercel.app'
+    url: 'https://resize-img-eight.vercel.app'
   },
   {
     id: 'images-to-pdf-converter',
     name: 'Images to PDF Converter',
     description: 'Convert multiple JPG, JPEG, and PNG images into a single, high-quality PDF document completely client-side.',
     tags: ['PDF', 'Converter'],
-    url: 'https://images-to-pdf-converter-toolsy.vercel.app'
+    url: 'https://img2pdf-woad.vercel.app'
   },
   {
     id: 'json-formatter-validator',
     name: 'JSON Formatter & Validator',
     description: 'A premium aesthetic JSON formatter, validator, and interactive tree visualizer with real-time error tracking.',
     tags: ['JSON', 'Validator', 'Developer Tools'],
-    url: 'https://json-formatter-validator-toolsy.vercel.app'
+    url: 'https://formatte-json.vercel.app'
   },
   {
     id: 'jwt-debugger',
     name: 'JWT Debugger',
     description: 'A highly secure, client-side JWT debugger and parser with real-time color-coded breakdown.',
     tags: ['Security', 'JWT', 'Developer Tools'],
-    url: 'https://jwt-debugger-toolsy.vercel.app'
+    url: 'https://debug-jwt.vercel.app'
   },
   {
     id: 'pdf-page-extractor',
     name: 'PDF Page Extractor',
     description: 'A luxury, minimalist client-side tool to extract specific pages and ranges from PDF files smoothly.',
     tags: ['PDF', 'Utility'],
-    url: 'https://pdf-page-extractor-toolsy.vercel.app'
+    url: 'https://extract-pdf-omega.vercel.app'
   },
   {
     id: 'pdf-watermarker',
     name: 'PDF Watermarker',
     description: 'An elegant client-side PDF watermarking tool featuring customizable text, opacity, and rotation controls.',
     tags: ['PDF', 'Security'],
-    url: 'https://pdf-watermarker-toolsy.vercel.app'
+    url: 'https://watermark-pdf.vercel.app'
   },
   {
     id: 'qr-code-generator-scanner',
     name: 'QR Code Generator & Scanner',
     description: 'A dual-purpose utility to generate custom QR codes from text/URLs and scan them using standard camera streams.',
     tags: ['QR', 'Generator', 'Utility'],
-    url: 'https://qr-code-generator-scanner-toolsy.vercel.app'
+    url: 'https://qr-gen-phi-one.vercel.app'
   },
   {
     id: 'SVG-PNG',
     name: 'SVG to PNG Converter',
     description: 'Convert scalable vector paths into lossless raster graphics using a high DPI rasterizer.',
     tags: ['Image', 'Converter', 'SVG'],
-    url: 'https://svg-png-toolsy.vercel.app'
+    url: 'https://pngsvg.vercel.app'
   },
   {
     id: 'txt-to-pdf-converter',
     name: 'TXT to PDF Converter',
     description: 'A premium, minimalist text-to-pdf editor with live typesetting preview and high-fidelity PDF printing.',
     tags: ['Text', 'PDF', 'Converter'],
-    url: 'https://txt-to-pdf-converter-toolsy.vercel.app'
+    url: 'https://txt2pdf-sigma.vercel.app'
   },
   {
     id: 'unit-converter',
     name: 'Unit Converter',
     description: 'A premium, lightning-fast glassmorphic Unit Converter featuring seamless dual-column dynamic calculations.',
     tags: ['Utility', 'Calculator'],
-    url: 'https://unit-converter-toolsy.vercel.app'
+    url: 'https://uconvert-seven.vercel.app'
   },
   {
     id: 'url-encoder-decoder',
     name: 'URL Encoder Decoder',
     description: 'A clean, glassmorphic tool to instantly encode, decode, and parse URL query parameters.',
     tags: ['URL', 'Developer Tools'],
-    url: 'https://url-encoder-decoder-toolsy.vercel.app'
+    url: 'https://encod-url.vercel.app'
   },
   {
     id: 'word-character-counter',
     name: 'Word & Character Counter',
     description: 'An elegant, interactive real-time Word and Character Counter tool featuring reading/speaking estimates.',
     tags: ['Text', 'Counter'],
-    url: 'https://word-character-counter-toolsy.vercel.app'
+    url: 'https://word-count-nine-wine.vercel.app'
   }
 ];
 
